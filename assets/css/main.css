@@ -1,0 +1,10 @@
+.users img {
+    width: 100px;
+   
+    border-radius: 10px;
+}
+
+.users h2 {
+    font-size: 20px;
+    color: royalblue;
+}
