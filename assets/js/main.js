@@ -14,7 +14,9 @@ const displayUsers = async () => {
           
           <td>  <h2> ${user.name} </h2></td>
           <td>  <img src ="${user.imageUrl}" /></td>
-          <td> <button class="btn btn-outline-danger mt-2" onclick=deleteUser(${user.id})> Delete </button> </td>
+          <td> <button class="btn btn-outline-danger mt-2" onclick=deleteUser(${user.id})> Delete </button> 
+               <a href="./details.html?userId=${user.id}" class="btn btn-outline-info mt-2">Details </a>
+          </td>
           </tr>
                  
         `
