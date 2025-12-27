@@ -4,7 +4,8 @@ const getUsers = async () => {
 }
 
 const displayUsers = async () => {
-    const result = await getUsers();
+  try {
+      const result = await getUsers();
     console.log(result);
 
     const users  = result.users.map ( (user) => {
@@ -23,6 +24,9 @@ const displayUsers = async () => {
     }).join(' ');
 
     document.querySelector(".users .users-data").innerHTML = users;
+  }catch(error){
+    document.querySelector(".errorClass").classList.remove("d-none");
+  }
 
 }
 
